@@ -4,7 +4,8 @@ function try () {
 "$@" || exit -1
 }
 
-[ -z "$ANDROID_NDK_HOME" ] && ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
+ANDROID_HOME=/Users/athena/Library/Android/sdk
+ANDROID_NDK_HOME=/Users/athena/Library/Android/sdk/ndk-bundle
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MIN_API=$1
